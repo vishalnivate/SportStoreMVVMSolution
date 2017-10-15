@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportStoreValidationDIWpfApp"
+        xmlns:prods="clr-namespace:SportStoreValidationDIWpfApp.Products"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type prods:ProductListViewModel}">
+            <prods:ProductListView/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Height="25" Width="120" Content="Products" 
+                        Command="{Binding NavigateCommand}"
+                        CommandParameter="products"/>
+            </StackPanel>
+            <StackPanel>
+                <ContentControl Content="{Binding CurrentViewModel}"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
