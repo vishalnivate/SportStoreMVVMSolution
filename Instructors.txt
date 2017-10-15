@@ -1,0 +1,31 @@
+Project DAL/SportStoreDomainLibrary
+   ** Code First
+   Nuget Packege
+    1.Install-Package EntityFramework
+	2.cls
+	Entity Frameworks
+	1.Enable-Migrations -ContextTypeName SportStoreDomainLibrary.Concrete.SportStoreDbContext -MigrationsDirectory DataContext\SportStoreMigrations
+	
+	2. Add-Migration this will create a class with the name InitialCrete which will have the table structure.
+	Add-Migration -ConfigurationTypeName SportStoreDomainLibrary.DataContext.SportStoreMigrations.Configuration "InitialCreate"
+
+	3.Update DataBase Will Create table structure and insert all data into database.
+	Update-Database -ConfigurationTypeName SportStoreDomainLibrary.DataContext.SportStoreMigrations.Configuration -Verbose
+
+	<connectionStrings>
+    <add name="SportStoreConnection" providerName="System.Data.SqlClient" connectionString="Server=M-30; Initial Catalog=SportStoreDb; Integrated Security=true;"/>
+  </connectionStrings>
+  -------------------------------------------------------------------------------------------
+  Project MVVM/BasicSportStoreWpfApp
+  Referance
+    1.SportStoreDomainLibrary
+   Nuget Packege
+    1.Install-Package EntityFramework
+
+-----------------------------------------------------------------------------------------
+ Project MVVM/SportStoreValidationDIWpfApp
+  Referance
+    1.SportStoreDomainLibrary
+   Nuget Packege
+    1.Install-Package EntityFramework
+	2.Install-Package Unity
