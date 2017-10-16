@@ -85,10 +85,15 @@
     <Compile Include="BindableBase.cs" />
     <Compile Include="Convertor\NegatableBooleanToVisibilityConverter.cs" />
     <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Products\AddEditProductView.xaml.cs">
+      <DependentUpon>AddEditProductView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Products\AddEditProductViewModel.cs" />
     <Compile Include="Products\ProductListView.xaml.cs">
       <DependentUpon>ProductListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Products\ProductListViewModel.cs" />
+    <Compile Include="Products\SimpleEditableProduct.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="SportStoreContainer.cs" />
     <Compile Include="ValidatableBindableBase.cs" />
@@ -108,6 +113,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Products\AddEditProductView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Products\ProductListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +141,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\SportStoreDomainLibrary.Entities.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

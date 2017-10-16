@@ -10,21 +10,33 @@
     <Window.DataContext>
         <local:MainWindowViewModel/>
     </Window.DataContext>
+
     <Window.Resources>
         <DataTemplate DataType="{x:Type prods:ProductListViewModel}">
             <prods:ProductListView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type prods:AddEditProductViewModel}">
+            <prods:AddEditProductView/>
+        </DataTemplate>
     </Window.Resources>
-    <Grid>
+    
+    <ScrollViewer>
         <StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button Height="25" Width="120" Content="Products" 
-                        Command="{Binding NavigateCommand}"
+                <Button Height="25" Width="120" Content="Products"
+                        Command="{Binding NavigateCommand}" 
                         CommandParameter="products"/>
+                <Button Height="25" Width="120" Margin="3, 0, 0, 0"
+                        Content="Add New Product"
+                        Command="{Binding NavigateCommand}" 
+                        CommandParameter="addNewProduct"/>
+                <Button Height="25" Width="120" Margin="3, 0, 0, 0"
+                        Content="New Product"
+                        Command="{Binding AddNewProductCommand}"/>
             </StackPanel>
             <StackPanel>
                 <ContentControl Content="{Binding CurrentViewModel}"/>
             </StackPanel>
         </StackPanel>
-    </Grid>
+    </ScrollViewer>
 </Window>

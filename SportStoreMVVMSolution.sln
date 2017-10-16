@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVVM", "MVVM", "{7CC8800B-A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicSportStoreWpfApp", "BasicSportStoreWpfApp\BasicSportStoreWpfApp.csproj", "{F959B16B-B93B-498E-A3E5-C6754888AE93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStoreValidationDIWpfApp", "SportStoreValidationDIWpfApp\SportStoreValidationDIWpfApp.csproj", "{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStoreValidationDIWpfApp", "SportsStoreValidationDIWpfApp\SportsStoreValidationDIWpfApp.csproj", "{C888E4CA-FCE0-45B9-8483-8323A478477F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +32,10 @@ Global
 		{F959B16B-B93B-498E-A3E5-C6754888AE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F959B16B-B93B-498E-A3E5-C6754888AE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F959B16B-B93B-498E-A3E5-C6754888AE93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C888E4CA-FCE0-45B9-8483-8323A478477F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C888E4CA-FCE0-45B9-8483-8323A478477F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C888E4CA-FCE0-45B9-8483-8323A478477F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C888E4CA-FCE0-45B9-8483-8323A478477F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +43,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{50510597-3B38-4171-8BE3-DD078BD989A7} = {838BC488-747F-4531-BF05-95AED7EDD0CD}
 		{F959B16B-B93B-498E-A3E5-C6754888AE93} = {7CC8800B-A7BF-4FC0-B780-ACF4A9301B1B}
-		{F958BC5D-4D33-4D83-BC84-7D58C9A0D94B} = {7CC8800B-A7BF-4FC0-B780-ACF4A9301B1B}
+		{C888E4CA-FCE0-45B9-8483-8323A478477F} = {7CC8800B-A7BF-4FC0-B780-ACF4A9301B1B}
 	EndGlobalSection
 EndGlobal

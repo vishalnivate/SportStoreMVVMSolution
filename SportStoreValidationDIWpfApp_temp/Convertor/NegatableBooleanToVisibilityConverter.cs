@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace SportStoreValidationDIWpfApp
+namespace SportStoreValidationDIWpfApp.Convertor
 {
     public class NegatableBooleanToVisibilityConverter : IValueConverter
     {

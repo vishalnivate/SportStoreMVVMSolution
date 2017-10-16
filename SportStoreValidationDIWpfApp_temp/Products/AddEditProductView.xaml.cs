@@ -13,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SportStoreValidationDIWpfApp.Products
+namespace SportsStoreValidationDIWpfApp.Products
 {
     /// <summary>
-    /// Interaction logic for ProductListView.xaml
+    /// Interaction logic for AddEditProductView.xaml
     /// </summary>
-    public partial class ProductListView : UserControl
+    public partial class AddEditProductView : UserControl
     {
-        public ProductListView()
+        public AddEditProductView()
         {
             InitializeComponent();
         }
-    }
+  }
 }
